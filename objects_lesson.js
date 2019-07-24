@@ -1,11 +1,10 @@
 const game = {
     title: 'Guess the Number!',
-    biggestNum: 100
+    biggestNum: 100,
+    smallestNum: 1
 }
-
-game.sallestNum = 0
 game.numGuesses = 0
-game.smallestNum = 1
+
 game.play = function () {
     this.secretNum = Math.floor((Math.random() * this.biggestNum - this.smallestNum + 1)) //return number between 0 - .99999
 }
